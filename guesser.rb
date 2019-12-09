@@ -5,6 +5,6 @@ answer = rand(100) + 1
 
 
 get '/' do
-    "The SECRET NUMBER is #{answer}"
+    erb :index, :locals => {:answer => answer}
 end
 
